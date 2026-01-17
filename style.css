@@ -365,3 +365,36 @@ tr:hover {
     border-radius: 5px;
     cursor: pointer;
 }
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-wrap: wrap; /* للسماح للكلمات بالنزول لسطر جديد بدل التداخل */
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .navbar {
+        height: auto; /* ليتمدد الارتفاع حسب عدد السطور */
+    }
+}
+@media (max-width: 600px) {
+    .canvas-wrapper {
+        overflow-x: auto; /* لإضافة تمرير جانبي إذا كانت اللوحة كبيرة */
+    }
+    
+    /* إذا كنتِ تستخدمين Flexbox للدوائر */
+    .blood-groups-container { 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* تظهر دائرتين في كل سطر */
+        gap: 15px;
+    }
+}
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem; /* تصغير الخط بما يناسب عرض الشاشة */
+    }
+    .hero p {
+        font-size: 0.9rem;
+        width: 90%; /* لضمان وجود مسافات على الجوانب */
+    }
+}
