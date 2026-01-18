@@ -367,20 +367,25 @@ tr:hover {
     border-radius: 5px;
     cursor: pointer;
 }
-/* هذا الجزء هو السحر الذي سيعدل الموقع للتلفون تلقائياً */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 35px; /* تصغير العنوان ليناسب عرض التلفون */
-        letter-spacing: 1px;
+/* --- تعديلات خاصة للهواتف --- */
+@media screen and (max-width: 480px) {
+    .navbar ul {
+        gap: 5px !important;
+        font-size: 12px !important;
     }
     
-    .hero p {
-        font-size: 16px;
-        padding: 0 15px;
+    .hero h1 {
+        font-size: 30px !important; /* تصغير الكلمة الكبيرة */
+        margin-top: 20px;
     }
 
-    .navbar ul {
-        gap: 10px;
-        font-size: 14px;
+    .hero p {
+        font-size: 14px !important;
+        padding: 0 10px;
+    }
+
+    .scroll-btn {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
     }
 }
